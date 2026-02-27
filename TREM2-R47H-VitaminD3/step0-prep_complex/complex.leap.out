@@ -1,0 +1,110 @@
+-I: Adding /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/prep to search path.
+-I: Adding /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib to search path.
+-I: Adding /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm to search path.
+-I: Adding /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd to search path.
+-f: Source complex.leap.in.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: ./complex.leap.in
+----- Source: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.protein.ff14SB
+----- Source of /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.protein.ff14SB done
+Log file: ./leap.log
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/parm10.dat
+Reading title:
+PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/frcmod.ff14SB
+Reading force field modification type file (frcmod)
+Reading title:
+ff14SB protein backbone and sidechain parameters
+Loading library: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib/amino12.lib
+Loading library: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib/aminoct12.lib
+Loading library: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib/aminont12.lib
+----- Source: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.water.tip3p
+----- Source of /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.water.tip3p done
+Loading library: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib/atomic_ions.lib
+Loading library: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/lib/solvents.lib
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/frcmod.tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+This is the additional/replacement parameter set for TIP3P water
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/frcmod.ions1lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of monovalent ions for TIP3P water model (12-6 normal usage set)
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/frcmod.ionsjc_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Monovalent ion parameters for Ewald and TIP3P water from Joung & Cheatham JPCB (2008)
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/frcmod.ions234lm_126_tip3p
+Reading force field modification type file (frcmod)
+Reading title:
+Li/Merz ion parameters of divalent to tetravalent ions for TIP3P water model (12-6 normal usage set)
+----- Source: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.gaff
+----- Source of /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/cmd/leaprc.gaff done
+Log file: ./leap.log
+Loading parameters: /share/apps/rc/software/AmberTools/19-fosscuda-2018a/dat/leap/parm/gaff.dat
+Reading title:
+AMBER General Force Field for organic molecules (Version 1.81, May 2017)
+Loading parameters: ./VitaminD3.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+Remark line goes here
+Loading library: ./VitaminD3.lib
+Loading PDB file: ./TREM2_R47H-VitaminD3.pdb
+  total atoms in file: 885
+  Leap added 893 missing atoms according to residue templates:
+       893 H / lone pairs
+Box dimensions:  32.666156 36.845163 43.664814
+Checking 'complex'....
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Warning!
+The unperturbed charge of the unit (4.000002) is not zero.
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Warning!
+Close contact of 1.086484 angstroms between .R<TRP 70>.A<HE1 12> and .R<THR 88>.A<HG1 12>
+Checking parameters for unit 'complex'.
+Checking for bond parameters.
+Checking for angle parameters.
+check:  Warnings: 2
+Unit is OK.
+Checking Unit.
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Warning!
+The unperturbed charge of the unit (4.000002) is not zero.
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Note.
+Ignoring the warning from Unit Checking.
+
+Building topology.
+Building atom parameters.
+Building bond parameters.
+Building angle parameters.
+Building proper torsion parameters.
+Building improper torsion parameters.
+ total 354 improper torsions applied
+Building H-Bond parameters.
+Incorporating Non-Bonded adjustments.
+Not Marking per-residue atom chain types.
+Marking per-residue atom chain types.
+  (Residues lacking connect0/connect1 - 
+   these don't have chain types marked:
+
+	res	total affected
+
+	CLEU	1
+	LIG	1
+	NTHR	1
+  )
+ (no restraints)
+Writing pdb file: TREM2_R47H-VitaminD3_new.pdb
+   printing CRYST1 record to PDB file with box info
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Warning!
+ Converting N-terminal residue name to PDB format: NTHR -> THR
+
+/share/apps/rc/software/AmberTools/19-fosscuda-2018a/bin/teLeap: Warning!
+ Converting C-terminal residue name to PDB format: CLEU -> LEU
+	Quit
+
+Exiting LEaP: Errors = 0; Warnings = 5; Notes = 1.
