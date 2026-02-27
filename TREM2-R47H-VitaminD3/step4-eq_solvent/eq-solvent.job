@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --partition=short
+#SBATCH --job-name="TREM2_R47H-VitaminD3-Solv-EQ"
+#SBATCH --error="TREM2_R47H-VitaminD3-Solv-EQ.err"
+#SBATCH --output="TREM2_R47H-VitaminD3-Solv-EQ.out"
+#SBATCH --ntasks=4
+#SBATCH --time 08:00:00
+#SBATCH --mem-per-cpu=1024
+#SBATCH --mail-type=FAIL
+#SBATCH --mail-user=ragreer@uab.edu
+
+module load Amber/18-fosscuda-2018a-AmberTools-19-patchlevel-10-8
+
+sander -O -i eq-solvent.in -p TREM2_R47H-VitaminD3-SolvI.prmtop -c TREM2_R47H-VitaminD3-min-SolvI.rst -ref TREM2_R47H-VitaminD3-min-SolvI.rst -o eq-solvent.out -r TREM2_R47H-VitaminD3-eq-SolvI.rst -x TREM2_R47H-VitaminD3-eq-SolvI.mdcrd -inf TREM2_R47H-VitaminD3-eq-SolvI.mdinfo
