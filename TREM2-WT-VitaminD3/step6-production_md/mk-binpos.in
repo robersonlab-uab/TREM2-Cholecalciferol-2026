@@ -1,0 +1,7 @@
+trajin TREM2-VitaminD3-md.mdcrd
+trajin TREM2-VitaminD3-ext1.mdcrd
+trajin TREM2-VitaminD3-ext2.mdcrd
+trajin TREM2-VitaminD3-ext3.mdcrd
+autoimage
+trajout TREM2-VitaminD3-md.binpos binpos nobox
+strip :WAT,Na+,Cl-

@@ -1,0 +1,27 @@
+parm TREM2-VitaminD3.prmtop
+trajin TREM2-VitaminD3-md.binpos
+
+rms first out Output/TREM2-VitaminD3_1st.rmsd @CA
+
+createcrd Traj
+run
+
+
+crdaction Traj distance \
+	:21,24,49,50,54 :110 out Output/hydrophobic.agr \
+#run
+
+crdaction Traj distance \
+    :27,42,46,48 :110 out Output/basic.agr \
+#run
+
+crdaction Traj distance \
+    :13,15,63,65,74,76 :110 out Output/reverse.agr \
+#run
+
+crdaction Traj distance \
+    :5,7,82,85,108 :110 out Output/bot.agr \
+run
+
+# crdout Traj TREM2-M2-movie.binpos crdframes 32500,35000
+# run

@@ -1,0 +1,10 @@
+# Trajectory Building
+# Input files for analysis in order
+
+parm TREM2-VitaminD3.prmtop
+trajin TREM2-VitaminD3-md.binpos
+
+# RMSD comparison to backbone in the first frame to fix translation and rotation
+
+rms first out Output/TREM2-VitaminD3_1st.rmsd @CA time 0.01
+run
