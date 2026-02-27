@@ -1,0 +1,11 @@
+source leaprc.protein.ff14SB					
+source leaprc.water.tip3p						
+source leaprc.gaff
+loadamberparams VitaminD3.frcmod					
+loadoff VitaminD3.lib							
+complex = loadpdb TREM2_F74D-VitaminD3.pdb					
+setbox complex centers							
+check complex								
+saveamberparm complex TREM2_F74D-VitaminD3.prmtop TREM2_F74D-VitaminD3.inpcrd	
+savepdb complex TREM2_F74D-VitaminD3_new.pdb				
+quit
