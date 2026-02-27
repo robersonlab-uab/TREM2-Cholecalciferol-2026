@@ -1,0 +1,19 @@
+
+ NSTEP =     5000   TIME(PS) =      10.000  TEMP(K) =    50.63  PRESS =     0.0
+ Etot   =   -190611.7023  EKtot   =      4837.9420  EPtot      =   -195449.6443
+ BOND   =        90.0116  ANGLE   =       361.9556  DIHED      =      1270.6107
+ 1-4 NB =       349.9770  1-4 EEL =      3514.1370  VDWAALS    =     37497.3700
+ EELEC  =   -238533.7063  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ Ewald error estimate:   0.1543E-03
+
+| Final Performance Info:
+| -----------------------------------------------------
+| Average timings for last    1000 steps:
+|     Elapsed(s) =     405.60 Per Step(ms) =     405.60
+|         ns/day =       0.43   seconds/ns =  202798.31
+|
+| Average timings for all steps:
+|     Elapsed(s) =    2022.37 Per Step(ms) =     404.47
+|         ns/day =       0.43   seconds/ns =  202237.11
+| -----------------------------------------------------
+
