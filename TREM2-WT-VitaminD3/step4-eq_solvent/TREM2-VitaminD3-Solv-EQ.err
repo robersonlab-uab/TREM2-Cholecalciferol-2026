@@ -1,0 +1,6 @@
+
+The following have been reloaded with a version change:
+  1) Python/2.7.14-fosscuda-2018a => Python/2.7.15-fosscuda-2018a
+  2) SQLite/3.21.0-GCCcore-6.4.0 => SQLite/3.24.0-GCCcore-6.4.0
+  3) ncurses/6.0-GCCcore-6.4.0 => ncurses/6.1-GCCcore-6.4.0
+
