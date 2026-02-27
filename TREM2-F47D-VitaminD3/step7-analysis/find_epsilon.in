@@ -1,0 +1,7 @@
+# Input files for analysis
+parm TREM2-F74D-VitaminD3.prmtop
+trajin TREM2-F74D-VitaminD3-eq.binpos
+
+# Build K-dist plot to help select epsilon and minpoint values for dbscan clustering
+cluster C0 dbscan kdist 5 rms sieve 10 kfile Cluster
+run

@@ -1,0 +1,5 @@
+trajin TREM2_F74D-VitaminD3-md.mdcrd
+trajin TREM2_F74D-VitaminD3-ext1.mdcrd
+unwrap
+trajout TREM2_F74D-VitaminD3-md-unwrap.binpos binpos nobox
+strip :WAT,Na+,Cl-
