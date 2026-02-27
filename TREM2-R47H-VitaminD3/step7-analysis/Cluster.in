@@ -1,0 +1,18 @@
+# Input files for analysis
+parm TREM2-R47H-VitaminD3.prmtop
+trajin TREM2-R47H-VitaminD3-eq.binpos
+
+#After checking the epsilon from kdist.
+cluster dbscan minpoints 5 epsilon 1.61 sievetoframe \
+        rms \
+        sieve 10 random \
+        out Cluster/TREM2-R47H-VitaminD3.clust \
+        sil Cluster/Sil \
+        summary Cluster/TREM2-R47H-VitaminD3-summary.clust \
+        info Cluster/TREM2-R47H-VitaminD3-info.clust \
+        cpopvtime Cluster/TREM2-R47H-VitaminD3-time.clust normframe \
+        repout Cluster/clust repfmt pdb \
+        singlerepout Cluster/TREM2-R47H-VitaminD3-2DrepClust.nc singlerepfmt netcdf \
+        avgout Cluster/Avg avgfmt restart
+run
+
